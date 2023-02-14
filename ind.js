@@ -432,6 +432,7 @@ function loadAnimation() {
             if(j==61 && (i== 56 || i==57)) {
                 wishElem.classList.add("wElMain")
             }
+
             if(j==62 && (i== 55 || i==54)) {
                 wishElem.classList.add("wElMain")
             }

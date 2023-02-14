@@ -10,10 +10,10 @@ wishColumn.className = "wishCol"
 let symbolsArray = ['q','0', 'e','r','t','y','u','i','1','p','2','s','3','f','4','h','5','k','6','z','7','c','8','b','8','m','Q','W','E','R','T','Y','U','I']
 
 function loadAnimation() {
-    let colCount = screenWidth/15
-    let rowCount = screenHeight/15
-    colCount = Math.floor(colCount)
-    rowCount = Math.floor(rowCount)
+    let colCount = 100
+    let rowCount = 62
+    wishColumn.style.width = Number(screenWidth)/Number(colCount) + "px"
+    wishColumn.style.fontSize = Number(screenHeight)/Number(rowCount) + "px"
     for(let i = 0; i < colCount; i++){
         let dupl = wishColumn.cloneNode(true)
         wishesBox.append(dupl)
@@ -182,11 +182,268 @@ function loadAnimation() {
             if(i==16 && j>=85 && j<=91){
                 wishElem.classList.add("wElMain")
             }
+
+            // Д
+            if((j==17 || j==25) && i>= 29 && i<=30){
+                wishElem.classList.add("wElMain")
+            }
+            if((j>=17 && j<=25) && i==29){
+                wishElem.classList.add("wElMain")
+            }
+            if((j==18 || j==24) && i == 31){
+                wishElem.classList.add("wElMain")
+            }
+            if((j==19 || j==23) && i == 32){
+                wishElem.classList.add("wElMain")
+            }
+            if((j==19 || j==23) && (i>=25 && i<=28)){
+                wishElem.classList.add("wElMain")
+            }
+            if(i==25 && (j>=19 && j<=23)){
+                wishElem.classList.add("wElMain")
+            }
+
+            //Л
+            if((j==27 || j==35) && i==32){
+                wishElem.classList.add("wElMain")
+            }
+            if((j==28 || j==34) && (i== 31 || i==30)){
+                wishElem.classList.add("wElMain")
+            }
+            if((j==29 || j==33) && (i== 29 || i==28)){
+                wishElem.classList.add("wElMain")
+            }
+            if((j==30 || j==32) && i== 27){
+                wishElem.classList.add("wElMain")
+            }
+            if(j==31 && (i==25 || i==26)){
+                wishElem.classList.add("wElMain")
+            }
+
+
+
+            //Я
+            if(j == 42 && (i>=25 && i <= 32)) {
+                wishElem.classList.add("wElMain")
+            }
+            if((j == 41 && (i == 29 || i==25)) ||(j == 40 && i == 30)||(j == 39 && i == 31)||(j == 38 && i == 32) || (j == 40 && (i == 28 || i ==26))){
+                wishElem.classList.add("wElMain")
+            }
+
+            //C
+            if(j == 10 && (i>=40 && i <= 44)){
+                wishElem.classList.add("wElMain")
+            }
+            if(j==11 && (i==39 || i == 45)){
+                wishElem.classList.add("wElMain")
+            }
+            if(j==12 && (i==38 || i == 46)){
+                wishElem.classList.add("wElMain")
+            }
+            if((j>=13 && j<=15) && (i==37 || i == 47)){
+                wishElem.classList.add("wElMain")
+            }
+
+            //A
+            if((j==18 || j==26) && i>= 44 && i<=47){
+                wishElem.classList.add("wElMain")
+            }
+            if((j==19 || j==25) && (i== 43 || i==42)){
+                wishElem.classList.add("wElMain")
+            }
+            if((j==20 || j==24) && (i== 40 || i==41)){
+                wishElem.classList.add("wElMain")
+            }
+            if((j==21 || j==23) && i== 39){
+                wishElem.classList.add("wElMain")
+            }
+            if(j==22 && (i== 38 || i==37)){
+                wishElem.classList.add("wElMain")
+            }
+            if(i==44 && j>=19 && j<=25){
+                wishElem.classList.add("wElMain")
+            }
+
+            //M
+            if((j==28 || j==36) && i>= 44 && i<=47){
+                wishElem.classList.add("wElMain")
+            }
+            if((j==29 || j==35) && (i== 43 || i==42)){
+                wishElem.classList.add("wElMain")
+            }
+            if((j==30 || j==34) && (i== 41 || i==40)){
+                wishElem.classList.add("wElMain")
+            }
+            if((j==31 || j==33) && i== 39){
+                wishElem.classList.add("wElMain")
+            }
+            if(j==32 && (i==38 || i==37)){
+                wishElem.classList.add("wElMain")
+            }
+            if((j==36 || j==44) && i>= 44 && i<=47){
+                wishElem.classList.add("wElMain")
+            }
+            if((j==37 || j==43) && (i== 43 || i==42)){
+                wishElem.classList.add("wElMain")
+            }
+            if((j==38 || j==42) && (i== 41 || i==40)){
+                wishElem.classList.add("wElMain")
+            }
+            if((j==39 || j==41) && i== 39){
+                wishElem.classList.add("wElMain")
+            }
+            if(j==40 && (i==38 || i==37)){
+                wishElem.classList.add("wElMain")
+            }
+
+            //О
+            if((j == 47 || j==55) && (i>=40 && i <= 44)){
+                wishElem.classList.add("wElMain")
+            }
+            if((j==48 || j==54) && (i==39 || i == 45)){
+                wishElem.classList.add("wElMain")
+            }
+            if((j==49 || j==53) && (i==38 || i == 46)){
+                wishElem.classList.add("wElMain")
+            }
+            if((j>=50 && j<=52) && (i==37 || i == 47)){
+                wishElem.classList.add("wElMain")
+            }
+
+            //И
+            if((j>=59 && j<=62) && i==35){
+                wishElem.classList.add("wElMain")
+            }
+            if((j==58) && i>= 37 && i<=47){
+                wishElem.classList.add("wElMain")
+            }
+            if(j==59 && (i== 47 || i==46)) {
+                wishElem.classList.add("wElMain")
+            }
+            if(j==60 && (i== 45 || i==44)) {
+                wishElem.classList.add("wElMain")
+            }
+            if(j==61 && (i== 42 || i==43)) {
+                wishElem.classList.add("wElMain")
+            }
+            if(j==62 && (i== 41 || i==40)) {
+                wishElem.classList.add("wElMain")
+            }
+            if((j==63) && i>= 37 && i<=47){
+                wishElem.classList.add("wElMain")
+            }
+
+            //M
+            if((j==10 || j==18) && i>= 58 && i<=61){
+                wishElem.classList.add("wElMain")
+            }
+            if((j==11 || j==17) && (i== 57 || i==56)){
+                wishElem.classList.add("wElMain")
+            }
+            if((j==12 || j==16) && (i==54 || i==55)){
+                wishElem.classList.add("wElMain")
+            }
+            if((j==13 || j==15) && i== 53){
+                wishElem.classList.add("wElMain")
+            }
+            if(j==14 && (i==52)){
+                wishElem.classList.add("wElMain")
+            }
+            if((j==18 || j==25) && i>= 58 && i<=61){
+                wishElem.classList.add("wElMain")
+            }
+            if((j==19 || j==24) && (i== 57 || i==56)){
+                wishElem.classList.add("wElMain")
+            }
+            if((j==20 || j==24) && (i== 54 || i==55)){
+                wishElem.classList.add("wElMain")
+            }
+            if((j==21 || j==23) && i== 53){
+                wishElem.classList.add("wElMain")
+            }
+            if(j==22 && (i==53 || i==52)){
+                wishElem.classList.add("wElMain")
+            }
+
+
+            if((j==30) && i>= 52 && i<=61){
+                wishElem.classList.add("wElMain")
+            }
+            if(j==31 && (i== 60 || i==59)) {
+                wishElem.classList.add("wElMain")
+            }
+            if(j==32 && (i== 58 || i==57)) {
+                wishElem.classList.add("wElMain")
+            }
+            if(j==33 && (i== 56 || i==55)) {
+                wishElem.classList.add("wElMain")
+            }
+            if(j==34 && (i== 54 || i==53)) {
+                wishElem.classList.add("wElMain")
+            }
+            if((j==35) && i>= 52 && i<=61){
+                wishElem.classList.add("wElMain")
+            }
+
+            //Л
+            if((j==38 || j==46) && i>= 59 && i<=61){
+                wishElem.classList.add("wElMain")
+            }
+            if((j==39 || j==45) && (i== 58 || i==57)){
+                wishElem.classList.add("wElMain")
+            }
+            if((j==40 || j==44) && (i== 55 || i==56)){
+                wishElem.classList.add("wElMain")
+            }
+            if((j==41 || j==43) && i== 54){
+                wishElem.classList.add("wElMain")
+            }
+            if(j==42 && (i==53 || i==52)){
+                wishElem.classList.add("wElMain")
+            }
+
+            //О
+            if((j == 48 || j==56) && (i>=55 && i <= 58)){
+                wishElem.classList.add("wElMain")
+            }
+            if((j==49 || j==55) && (i==54 || i == 59)){
+                wishElem.classList.add("wElMain")
+            }
+            if((j==50 || j==54) && (i==53 || i == 60)){
+                wishElem.classList.add("wElMain")
+            }
+            if((j>=51 && j<=53) && (i==52 || i == 61)){
+                wishElem.classList.add("wElMain")
+            }
+
+            //И
+            if((j>=59 && j<=62) && i==50){
+                wishElem.classList.add("wElMain")
+            }
+            if((j==58) && i>= 52 && i<=61){
+                wishElem.classList.add("wElMain")
+            }
+            if(j==59 && (i== 61 || i==60)) {
+                wishElem.classList.add("wElMain")
+            }
+            if(j==60 && (i== 59 || i==58)) {
+                wishElem.classList.add("wElMain")
+            }
+            if(j==61 && (i== 56 || i==57)) {
+                wishElem.classList.add("wElMain")
+            }
+            if(j==62 && (i== 55 || i==54)) {
+                wishElem.classList.add("wElMain")
+            }
+            if((j==63) && i>= 52 && i<=61){
+                wishElem.classList.add("wElMain")
+            }
+
             let text = document.createTextNode(symbol + " \n")
             wishElem.appendChild(text)
             setTimeout(function () {
                 wishesColumns[j].appendChild(wishElem)
-            }, 50 * i + 1);
+            }, 10 * i + 1);
         }
     }
     let sB1 = document.getElementById("8.8")

@@ -3,12 +3,11 @@ body, html, div{
     user-select: none;
     padding: 0;
     overflow-x: hidden;
-    overflow-y: hidden;
 }
 
 .wishesBox{
     width: 100%;
-    height: 100vh;
+    /*height: 100vh;*/
     position: relative;
     display: flex;
     flex-direction: row;
@@ -19,9 +18,9 @@ body, html, div{
     flex-direction: column;
     display: flex;
     width: 15px;
-    height: 100%;
+    /*height: 100%;*/
     font-size: 14px;
-    color: rgba(33, 140, 29, 0.72);
+    color: rgba(31, 122, 27, 0.65);
 }
 
 .wElMain{

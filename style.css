@@ -1,0 +1,29 @@
+body, html, div{
+    margin: 0;
+    user-select: none;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.wishesBox{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    background: black;
+}
+
+.wishCol{
+    flex-direction: column;
+    display: flex;
+    width: 15px;
+    height: 100%;
+    font-size: 14px;
+    color: rgba(33, 140, 29, 0.72);
+}
+
+.wElMain{
+    color: #4aff00;
+}
